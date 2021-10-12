@@ -1,9 +1,8 @@
 # NextProject
 
 An mildly opinionated starting point for Next.js projects.
-Because setting stuff up is boring and building stuff is fun.
 
----
+Because setting stuff up is boring and building stuff is fun.
 
 Out of the box support for:
 
