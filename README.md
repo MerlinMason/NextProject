@@ -17,11 +17,17 @@ Out of the box support for:
 # Development
 
 Install dependencies with `yarn`
+
 Run dev server with `yarn dev`
+
 Create prod build with `yarn build`
+
 Interactively update dependencies with `yarn bump`
+
 Run Jest tests with `yarn test:jest`
+
 Run Cypress tests for dev with `yarn test:cypress:dev`
+
 Run Cypress tests on CLI with `yarn test:cypress`
 
 # Deploy
