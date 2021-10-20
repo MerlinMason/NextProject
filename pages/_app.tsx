@@ -7,7 +7,7 @@ import Layout from "../components/Layout";
 const App: React.FC<AppProps> = ({ Component, pageProps }) => (
     <>
         <Head>
-            <title>Next Starter</title>
+            <title>NextProject</title>
             <link rel="icon" href="/favicon.ico" />
         </Head>
 
