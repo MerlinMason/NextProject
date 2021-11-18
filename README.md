@@ -13,6 +13,8 @@ Out of the box support for:
 -   Prettier
 -   Jest (with Testing Library)
 -   Cypress (with Testing Library)
+-   Dependabot config
+-   GitHub Actions CI config
 
 # Development
 
