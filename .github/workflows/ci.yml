@@ -7,5 +7,9 @@ jobs:
             - uses: actions/checkout@v2
             - name: Install modules
               run: yarn
-            - name: Run tests
+            - name: Eslint
+              run: yarn lint
+            - name: Run Jest tests
               run: yarn test:jest
+            - name: Run Cypress tests
+              uses: cypress-io/github-action@v2
