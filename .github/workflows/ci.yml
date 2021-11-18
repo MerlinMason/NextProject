@@ -1,0 +1,17 @@
+name: CI
+on: push
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - name: Install modules
+              run: yarn
+            - name: Eslint
+              run: yarn lint
+            - name: Run Jest tests
+              run: yarn test:jest
+            - name: Run Cypress tests
+              uses: cypress-io/github-action@v2
+              with:
+                  start: yarn dev
