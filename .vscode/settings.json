@@ -3,9 +3,10 @@
     "eslint.run": "onType",
     "editor.formatOnSave": true,
     "eslint.alwaysShowStatus": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "eslint.validate": ["typescript", "typescriptreact"],
     "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true,
-        "source.fixAll.stylelint": true
+        "source.fixAll.eslint": true
     },
     "search.exclude": {
         ".next/**/*": true,

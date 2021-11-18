@@ -1,3 +1,4 @@
+import React from "react";
 import { ShieldCheckIcon } from "@heroicons/react/outline";
 
 const Features: React.FC = () => {

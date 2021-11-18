@@ -1,56 +1,45 @@
 {
-    "parser": "@typescript-eslint/parser",
     "env": {
         "browser": true,
         "es2021": true,
-        "jest/globals": true,
-        "cypress/globals": true
+        "jest/globals": true
     },
-    "extends": [
-        "eslint:recommended",
-        "plugin:react/recommended",
-        "airbnb",
-        "next",
-        "plugin:@typescript-eslint/recommended",
-        "plugin:@typescript-eslint/recommended-requiring-type-checking",
-        "prettier",
-        "plugin:jest/recommended",
-        "plugin:jest/style",
-        "plugin:cypress/recommended"
-    ],
+    "parser": "@typescript-eslint/parser",
     "parserOptions": {
         "ecmaFeatures": {
             "jsx": true
         },
-        "ecmaVersion": 12,
+        "ecmaVersion": "latest",
         "sourceType": "module"
     },
+    "processor": "disable/disable",
+    "extends": [
+        "plugin:@typescript-eslint/recommended",
+        "plugin:react/recommended",
+        "airbnb",
+        "plugin:@next/next/recommended",
+        "plugin:react/jsx-runtime",
+        "plugin:react-hooks/recommended",
+        "plugin:jest/recommended",
+        "plugin:jest/style",
+        "plugin:cypress/recommended",
+        "prettier"
+    ],
     "plugins": [
         "react",
-        "@typescript-eslint/eslint-plugin",
-        "prettier",
+        "@typescript-eslint",
         "import",
         "jsx-a11y",
         "jest",
-        "cypress"
+        "cypress",
+        "disable",
+        "prettier"
     ],
     "rules": {
         "import/extensions": 0,
-        "react/jsx-props-no-spreading": 0,
-        "react/jsx-uses-react": "off",
-        "react/react-in-jsx-scope": "off",
-        "react/jsx-filename-extension": [2, { "extensions": [".jsx", ".tsx"] }],
-        "jsx-a11y/label-has-associated-control": [
-            2,
-            {
-                "labelComponents": ["label"],
-                "labelAttributes": ["htmlFor"],
-                "controlComponents": ["input"]
-            }
-        ],
-        "no-shadow": "off",
-        "@typescript-eslint/no-shadow": ["error"],
-        "no-console": 0
+        "react/function-component-definition": [2, { "namedComponents": "arrow-function" }],
+        "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx", ".tsx"] }],
+        "react/jsx-props-no-spreading": 0
     },
     "settings": {
         "import/parsers": {
@@ -58,8 +47,22 @@
         },
         "import/resolver": {
             "typescript": {
-                "alwaysTryTypes": true
+                "alwaysTryTypes": true // always try to resolve types under `<root>@types` directory even it doesn't contain any source code, like `@types/unist`
             }
         }
-    }
+    },
+    "overrides": [
+        {
+            "files": "**/__tests__/*-test.js",
+            "settings": {
+                "disable/plugins": "cypress"
+            }
+        },
+        {
+            "files": "**/cypress/**/*.spec.js",
+            "settings": {
+                "disable/plugins": "jest"
+            }
+        }
+    ]
 }
