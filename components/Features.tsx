@@ -10,6 +10,8 @@ const Features: React.FC = () => {
         "Prettier",
         "Jest (with Testing Library)",
         "Cypress (with Testing Library)",
+        "Dependabot config",
+        "GitHub Actions CI config",
     ];
 
     return (
