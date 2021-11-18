@@ -37,6 +37,7 @@
     ],
     "rules": {
         "import/extensions": 0,
+        "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
         "react/function-component-definition": [2, { "namedComponents": "arrow-function" }],
         "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx", ".tsx"] }],
         "react/jsx-props-no-spreading": 0
