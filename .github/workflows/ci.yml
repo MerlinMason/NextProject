@@ -13,3 +13,5 @@ jobs:
               run: yarn test:jest
             - name: Run Cypress tests
               uses: cypress-io/github-action@v2
+              with:
+                  start: yarn dev
