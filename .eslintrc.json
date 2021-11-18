@@ -53,12 +53,21 @@
     },
     "overrides": [
         {
+            // we need to make sure we're not linting js files twice
+            "files": ["**/*.js", "**/*.jsx"],
+            "settings": {
+                "disable/plugins": "@typescript-eslint"
+            }
+        },
+        {
+            // cypress shouldn't lint jest tests
             "files": "**/__tests__/*-test.js",
             "settings": {
                 "disable/plugins": "cypress"
             }
         },
         {
+            // jest shouldn't lint cypress tests
             "files": "**/cypress/**/*.spec.js",
             "settings": {
                 "disable/plugins": "jest"
