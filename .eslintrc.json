@@ -13,6 +13,10 @@
         "sourceType": "module"
     },
     "processor": "disable/disable",
+    "globals": {
+        "React": true,
+        "JSX": true
+    },
     "extends": [
         "plugin:@typescript-eslint/recommended",
         "plugin:react/recommended",
@@ -44,6 +48,9 @@
         "react/require-default-props": 0
     },
     "settings": {
+        "react": {
+            "version": "detect"
+        },
         "import/parsers": {
             "@typescript-eslint/parser": [".ts", ".tsx"]
         },
