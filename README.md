@@ -15,6 +15,7 @@ Out of the box support for:
 -   Cypress (with Testing Library)
 -   Dependabot config
 -   GitHub Actions CI config
+-   Colocate tests and supporting files in /pages directory
 
 # Development
 
