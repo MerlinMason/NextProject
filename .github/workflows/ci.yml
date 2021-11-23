@@ -10,7 +10,7 @@ jobs:
             - name: Eslint
               run: yarn lint
             - name: Run Jest tests
-              run: yarn test:jest
+              run: yarn dev & yarn test:jest
             - name: Run Cypress tests
               uses: cypress-io/github-action@v2
               with:
