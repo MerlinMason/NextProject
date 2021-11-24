@@ -14,7 +14,7 @@ Out of the box support for:
 -   Eslint (with Airbnb, jsx-a11y etc)
 -   Prettier
 -   Jest (with Testing Library)
--   Cypress (with Testing Library)
+-   Cypress (with Testing Library and A11y tests)
 -   Dependabot config
 -   GitHub Actions CI config
 -   Colocate tests and supporting files in /pages directory
