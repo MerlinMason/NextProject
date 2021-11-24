@@ -13,7 +13,7 @@
 // https://on.cypress.io/configuration
 // ***********************************************************
 
-// Import commands.js using ES2015 syntax:
+import "cypress-axe";
 import "./commands";
 
 Cypress.config("baseUrl", "http://localhost:3000");

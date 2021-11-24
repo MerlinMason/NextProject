@@ -13,7 +13,7 @@
         "resolveJsonModule": true,
         "isolatedModules": true,
         "jsx": "preserve",
-        "types": ["cypress", "@testing-library/cypress"],
+        "types": ["cypress", "cypress-axe", "@testing-library/cypress"],
         "incremental": true
     },
     "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "jest.config.js"],
