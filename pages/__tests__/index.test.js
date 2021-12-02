@@ -1,4 +1,4 @@
-import { render } from "../../testUtils.jsx";
+import { render } from "../../testUtils";
 import Home from "../index.page";
 
 describe("Home page", () => {
