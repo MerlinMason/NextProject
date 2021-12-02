@@ -9,6 +9,6 @@ describe("Home", () => {
     });
 
     it("Should list Cypress as a feature", () => {
-        cy.findByText("Cypress (with Testing Library)").should("exist");
+        cy.findByText("Cypress (with Testing Library and A11y tests)").should("exist");
     });
 });
