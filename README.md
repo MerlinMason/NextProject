@@ -2,7 +2,7 @@
 
 ![ci](https://github.com/MerlinMason/NextProject/actions/workflows/ci.yml/badge.svg?branch=main)
 
-An mildly opinionated starting point for Next.js projects.
+An opinionated starting point for Next.js projects.
 
 Because setting stuff up is boring and building stuff is fun.
 
